@@ -16,7 +16,7 @@ class _listaDeComprasState extends State<listaDeCompras> {
   Widget build(BuildContext context) {
     final appColors = Theme.of(context).extension<AppColors>()!;
     return ListView.builder(
-      key: Key("shoppingListCard"),
+      key: Key("cardList"),
       itemCount: widget.listas.length,
       itemBuilder: (context, index) {
         final lista = widget.listas[index];

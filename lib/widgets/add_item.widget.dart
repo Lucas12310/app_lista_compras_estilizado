@@ -69,7 +69,7 @@ class _AddItemState extends State<AddItem> {
               const SizedBox(height: 15),
 
               TextFormField(
-                key: const Key("inputItem"),
+                key: const Key("inputNameItem"),
                 controller: nameController,
                 style: TextStyle(color: appColors.modalTextColor),
                 decoration: InputDecoration(
@@ -86,7 +86,7 @@ class _AddItemState extends State<AddItem> {
               ),
 
               TextFormField(
-                key: const Key("inputValue"),
+                key: const Key("intputPriceItem"),
                 controller: precoController,
                 style: TextStyle(color: appColors.modalTextColor),
                 decoration: InputDecoration(
@@ -105,7 +105,7 @@ class _AddItemState extends State<AddItem> {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  key: const Key("addItemBtn"),
+                  key: const Key("btnAddItem"),
                   onPressed: addItem,
                   child: const Text(
                     "Adicionar",

@@ -67,7 +67,7 @@ class _DatailListState extends State<DatailList> {
         title: const SizedBox(),
         actions: [
           TextButton(
-            key: Key("updateListBtn"),
+            key: Key("btnUpdateList"),
             onPressed: () {
               Navigator.pop(context);
             },
@@ -108,7 +108,7 @@ class _DatailListState extends State<DatailList> {
                         Transform.scale(
                           scale: 1.3, // aumenta o tamanho
                           child: Checkbox(
-                            key: Key("productCheckbox"),
+                            key: Key("checkboxBuy"),
                             shape: const CircleBorder(),
                             value: item.comprado,
                             activeColor: Colors.green,
@@ -179,6 +179,7 @@ class _DatailListState extends State<DatailList> {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
+        key: Key("btnAddNewItem"),
         onPressed: addItem,
         label: Text("Adicionar", style: TextStyle(color: Colors.white)),
         shape: RoundedRectangleBorder(

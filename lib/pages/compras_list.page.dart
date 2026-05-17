@@ -18,7 +18,7 @@ class _CompraListPageState extends State<CompraListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        key: Key("appBarTitle"),
+        key: Key("tittleAppBar"),
         title: const Text(
           "Minhas Listas",
           style: TextStyle(color: Colors.white),
@@ -43,7 +43,7 @@ class _CompraListPageState extends State<CompraListPage> {
       body: listas.isEmpty ? telaVazia() : listaDeCompras(listas: listas),
 
       floatingActionButton: FloatingActionButton(
-        key: Key("addListBtn"),
+        key: Key("btnAddList"),
         onPressed: () async {
           final listName = await Navigator.push(
             context,

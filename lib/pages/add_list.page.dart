@@ -23,7 +23,7 @@ class _AddListState extends State<AddList> {
           children: [
             const Spacer(),
             TextField(
-              key: const Key("listNameInput"),
+              key: const Key("inputNameList"),
               controller: controller,
               style: TextStyle(color: appColors!.inputTextColor),
               decoration: InputDecoration(
@@ -40,7 +40,7 @@ class _AddListState extends State<AddList> {
                 // Botão Voltar
                 Expanded(
                   child: OutlinedButton(
-                    key: Key("backToListsBtn"),
+                    key: Key("btnBackList"),
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(
                         color: appColors!.textButtonColor,
@@ -58,7 +58,7 @@ class _AddListState extends State<AddList> {
                 const SizedBox(width: 16), // espaço entre eles
                 // Botão Criar
                 Expanded(
-                  key: Key("createListBtn"),
+                  key: Key("btnCreateList"),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: appColors!.createButtonBackgroundColor,

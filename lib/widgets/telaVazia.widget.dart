@@ -11,7 +11,7 @@ class telaVazia extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center, // centro horizontal
         children: [
           Image.asset(
-            key: Key("emptyListImage"),
+            key: Key("imageWithoutList"),
             "assets/images/lista-de-compras.png",
             width: 100,
             height: 100,
